@@ -2,8 +2,8 @@ pipeline{
   agent any
   stages{
     stage ('git'){
-      echo 'branch comit'
       steps{
+        echo 'branch comit'
         git credentialsId: 'trainid', url: 'https://github.com/dvimal117/cicd-pipeline-train-schedule-jenkins'
       }}
     stage ('Build'){
