@@ -7,7 +7,7 @@ pipeline{
       }}
     stage ('Build'){
       steps{
-        echo 'Running build automation'
+        echo 'Running build automation by vimal'
         sh './gradlew build --no-daemon'
         archiveArtifacts 'dist/trainSchedule.zip'
       }
