@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage ('git'){
       steps{
-        echo 'branch comit'
+        echo 'branch comit!'
         git credentialsId: 'trainid', url: 'https://github.com/dvimal117/cicd-pipeline-train-schedule-jenkins'
       }}
     stage ('Build'){
